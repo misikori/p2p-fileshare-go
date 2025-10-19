@@ -1,0 +1,18 @@
+services:
+  tracker:
+    build: . 
+    command: tracker 
+    ports:
+      - "8080:8080" 
+
+  client:
+    build: .
+    command: > 
+      sh -c "
+        echo 'Waiting for tracker to start...' && sleep 5;
+        client /shared/dummy_file.txt.meta
+      "
+    volumes:
+      - ./shared:/shared
+    depends_on:
+      - tracker 
