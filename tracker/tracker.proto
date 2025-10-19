@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package tracker;
+option go_package = "p2p-fileshare/tracker";
+
+// The Tracker service definition.
+service Tracker {
+  rpc Announce(AnnounceRequest) returns (AnnounceReply);
+  rpc GetPeers(GetPeersRequest) returns (GetPeersReply);
+}
+
+message AnnounceRequest {
+  bytes info_hash = 1;
+  string peer_id = 2;
+  int32 port = 3;
+}
+
+message AnnounceReply {
+  int32 interval = 1;
+}
+
+message GetPeersRequest {
+  bytes info_hash = 1;
+}
+
+message GetPeersReply {
+  repeated string peers = 1;
+}
