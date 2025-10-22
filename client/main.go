@@ -3,6 +3,7 @@ package main
 import (
 	"context"
 	"encoding/hex"
+	"fmt"
 	"log"
 	"net/url"
 	"os"
@@ -69,9 +70,10 @@ func startAnnounceHeartbeat(client pb.TrackerClient, meta *metafile.MetaInfo) {
 
 func announce(client pb.TrackerClient, infoHash []byte, port int32) int32 {
 	log.Println("Announcing to tracker...")
+	peerID := fmt.Sprintf("peer-%d", time.Now().UnixNano())
 	req := &pb.AnnounceRequest{
 		InfoHash: infoHash,
-		PeerId:   "new-peer-id",
+		PeerId:   peerID,
 		Port:     port,
 	}
 

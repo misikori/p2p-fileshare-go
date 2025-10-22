@@ -1,7 +1,7 @@
 package metafile
 
 import (
-	"crypto/sha1"
+	"crypto/sha256"
 	"encoding/json"
 	"io"
 	"os"
@@ -51,7 +51,7 @@ func Create(trackerURL, filePath string) (*MetaInfo, error) {
 			return nil, err
 		}
 		chunk := buffer[:bytesRead]
-		hash := sha1.Sum(chunk)
+		hash := sha256.Sum256(chunk)
 		info.Hashes = append(info.Hashes, hash[:])
 	}
 
@@ -59,7 +59,7 @@ func Create(trackerURL, filePath string) (*MetaInfo, error) {
 	if err != nil {
 		return nil, err
 	}
-	infoHash := sha1.Sum(infoBytes)
+	infoHash := sha256.Sum256(infoBytes)
 
 	meta := &MetaInfo{
 		Info:       info,

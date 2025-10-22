@@ -6,7 +6,6 @@ import (
 	"fmt"
 	"log"
 	"net"
-	"strings"
 	"sync"
 	"time"
 
@@ -41,11 +40,16 @@ func (s *Tracker) Announce(ctx context.Context, req *AnnounceRequest) (*Announce
 	s.mu.Lock()
 	defer s.mu.Unlock()
 
-	p, err := peer.FromContext(ctx)
-	if err != nil || p == nil || p.Addr == nil {
+	p, ok := peer.FromContext(ctx)
+	if !ok || p == nil || p.Addr == nil {
 		return nil, fmt.Errorf("unable to get peer address from context")
 	}
-	peerAddr := fmt.Sprintf("%s:%d", strings.Split(p.Addr.String(), ":")[0], req.Port)
+	host, port, err := net.SplitHostPort(p.Addr.String())
+	if err != nil {
+		return nil, fmt.Errorf("invalid peer address: %v", err)
+	}
+
+	peerAddr := net.JoinHostPort(host, port)
 	infoHashHex := hex.EncodeToString(req.InfoHash)
 
 	if _, ok := s.torrents[infoHashHex]; !ok {
