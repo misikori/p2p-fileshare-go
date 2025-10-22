@@ -13,7 +13,10 @@ func main() {
 		log.Fatalf("Error creating meta file: %v", err)
 	}
 
-	f, _ := os.Create("./shared/dummy_file.txt.meta")
+	f, err := os.Create("./shared/dummy_file.txt.meta")
+	if err != nil {
+		log.Fatalf("Error creating meta file: %v", err)
+	}
 	defer f.Close()
 	json.NewEncoder(f).Encode(meta)
 	log.Println("Created ./shared/dummy_file.txt.meta")

@@ -41,7 +41,10 @@ func (s *Tracker) Announce(ctx context.Context, req *AnnounceRequest) (*Announce
 	s.mu.Lock()
 	defer s.mu.Unlock()
 
-	p, _ := peer.FromContext(ctx)
+	p, err := peer.FromContext(ctx)
+	if err != nil || p == nil || p.Addr == nil {
+		return nil, fmt.Errorf("unable to get peer address from context")
+	}
 	peerAddr := fmt.Sprintf("%s:%d", strings.Split(p.Addr.String(), ":")[0], req.Port)
 	infoHashHex := hex.EncodeToString(req.InfoHash)
 
@@ -76,6 +79,7 @@ func (s *Tracker) GetPeers(ctx context.Context, req *GetPeersRequest) (*GetPeers
 
 func (s *Tracker) cleanupLoop() {
 	ticker := time.NewTicker(cleanupInterval)
+	defer ticker.Stop()
 	for range ticker.C {
 		s.mu.Lock()
 		log.Println("Running cleanup...")
