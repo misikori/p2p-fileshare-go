@@ -226,7 +226,6 @@ func handlePeerConnection(conn net.Conn, infoHash []byte, bitfield Bitfield) {
 }
 
 func startAnnounceHeartbeat(client pb.TrackerClient, meta *metafile.MetaInfo) {
-	const ourPort = 6881
 	interval := announce(client, meta.InfoHash, ourPort)
 	ticker := time.NewTicker(time.Duration(interval) * time.Second)
 	defer ticker.Stop()
