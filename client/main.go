@@ -37,9 +37,13 @@ func main() {
 	metaFilePath := os.Args[1]
 
 	meta, err := metafile.Parse(metaFilePath)
+
 	if err != nil {
 		log.Fatalf("Failed to parse meta file: %v", err)
 	}
+
+	numPieces := len(meta.Info.Hashes)
+	ourBitfield := NewBitfield(numPieces)
 
 	parsedURL, err := url.Parse(meta.TrackerURL)
 	if err != nil {
@@ -66,17 +70,17 @@ func main() {
 
 	// for each peer, spawn a goroutine to connect and handshake
 	for _, peerAddr := range getPeersRes.GetPeers() {
-		go connectToPeer(peerAddr, meta.InfoHash)
+		go connectToPeer(peerAddr, meta.InfoHash, ourBitfield)
 	}
 	go startAnnounceHeartbeat(trackerClient, meta)
 
 	log.Printf("Starting TCP listener on port %d", ourPort)
-	go startTCPListener(meta.InfoHash)
+	go startTCPListener(meta.InfoHash, ourBitfield)
 	log.Println("Client is running. Press Ctrl+C to exit.")
 	select {}
 }
 
-func startTCPListener(infoHash []byte) {
+func startTCPListener(infoHash []byte, bitfield Bitfield) {
 	addr := fmt.Sprintf(":%d", ourPort)
 	listener, err := net.Listen("tcp", addr)
 	if err != nil {
@@ -92,11 +96,11 @@ func startTCPListener(infoHash []byte) {
 		}
 
 		log.Printf("New peer connected: %s", conn.RemoteAddr())
-		go handlePeerConnection(conn, infoHash)
+		go handlePeerConnection(conn, infoHash, bitfield)
 	}
 }
 
-func connectToPeer(addr string, infoHash []byte) {
+func connectToPeer(addr string, infoHash []byte, bitfield Bitfield) {
 	log.Printf("Connecting to peer: %s", addr)
 	conn, err := net.DialTimeout("tcp", addr, 3*time.Second)
 	if err != nil {
@@ -134,12 +138,33 @@ func connectToPeer(addr string, infoHash []byte) {
 
 	log.Printf("Successfully handshaked with peer: %s", addr)
 
+	log.Printf("[%s] Sending bitfield...", addr)
+	msg := Message{Type: MsgBitfield, Payload: bitfield}
+	if err := msg.Send(conn); err != nil {
+		log.Printf("[%s] Failed to send bitfield: %v", addr, err)
+		return
+	}
+
+	log.Printf("[%s] Waiting for bitfield..", addr)
+	recvMsg, err := ReadMessage(conn)
+	if err != nil {
+		log.Printf("[%s] Failed to read bitfield: %v", addr, err)
+		return
+	}
+	if recvMsg.Type != MsgBitfield {
+		log.Printf("[%s] Expected bitfield, got %d", addr, recvMsg.Type)
+		return
+	}
+
+	theirBitfield := Bitfield(recvMsg.Payload)
+	log.Printf("[%s] Received bitfield. Peer has %d pieces.", addr, bytes.Count(theirBitfield, []byte{1}))
+
 	if _, err := io.Copy(io.Discard, conn); err != nil {
 		log.Printf("Connection with %s closed: %v", addr, err)
 	}
 }
 
-func handlePeerConnection(conn net.Conn, infoHash []byte) {
+func handlePeerConnection(conn net.Conn, infoHash []byte, bitfield Bitfield) {
 	defer conn.Close()
 	addr := conn.RemoteAddr().String()
 	log.Printf("Handling connection from %s", addr)
@@ -169,7 +194,31 @@ func handlePeerConnection(conn net.Conn, infoHash []byte) {
 
 	log.Printf("Successfully handshaked with peer: %s", conn.RemoteAddr())
 
-	// next step -> exchange bitfields; for now, keep connection open
+	// Receive their bitfield
+	log.Printf("[%s] Waiting for bitfield...", addr)
+	recvMsg, err := ReadMessage(conn)
+	if err != nil {
+		log.Printf("[%s] Failed to read bitfield: %v", addr, err)
+		return
+	}
+	if recvMsg.Type != MsgBitfield {
+		log.Printf("[%s] Expected bitfield, got %d", addr, recvMsg.Type)
+		return
+	}
+
+	theirBitfield := Bitfield(recvMsg.Payload)
+	log.Printf("[%s] Received bitfield. Peer has %d pieces.", addr, bytes.Count(theirBitfield, []byte{1})) // Simple check
+
+	// Send our bitfield
+	log.Printf("[%s] Sending bitfield...", addr)
+	msg := Message{Type: MsgBitfield, Payload: bitfield}
+	if err := msg.Send(conn); err != nil {
+		log.Printf("[%s] Failed to send bitfield: %v", addr, err)
+		return
+	}
+
+	log.Printf("[%s] Entering message loop...", addr)
+
 	if _, err := io.Copy(io.Discard, conn); err != nil {
 		log.Printf("Connection with %s closed: %v", conn.RemoteAddr(), err)
 	}
