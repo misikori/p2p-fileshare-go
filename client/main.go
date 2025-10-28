@@ -135,7 +135,7 @@ func connectToPeer(addr string, infoHash []byte) {
 	log.Printf("Successfully handshaked with peer: %s", addr)
 
 	if _, err := io.Copy(io.Discard, conn); err != nil {
-		log.Printf("Connnection with %s closed: %v", addr, err)
+		log.Printf("Connection with %s closed: %v", addr, err)
 	}
 }
 
