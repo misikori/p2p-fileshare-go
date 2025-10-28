@@ -22,7 +22,7 @@ import (
 
 var peerID [PeerIDLen]byte
 
-var ourPort int
+var ourPort int32
 
 func init() {
 	if _, err := rand.Read(peerID[:]); err != nil {
@@ -35,10 +35,9 @@ func init() {
 		log.Fatalf("Failed to find available port: %v", err)
 	}
 	addr := listener.Addr().(*net.TCPAddr)
-	ourPort = addr.Port
+	ourPort = int32(addr.Port)
 	listener.Close()
 }
-
 
 func main() {
 	if len(os.Args) < 2 {
