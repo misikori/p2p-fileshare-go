@@ -11,7 +11,7 @@ service Tracker {
 
 message AnnounceRequest {
   bytes info_hash = 1;
-  string peer_id = 2;
+  bytes peer_id = 2;
   int32 port = 3;
 }
 
