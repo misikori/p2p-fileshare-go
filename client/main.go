@@ -22,13 +22,23 @@ import (
 
 var peerID [PeerIDLen]byte
 
-const ourPort = 6881
+var ourPort int
 
 func init() {
 	if _, err := rand.Read(peerID[:]); err != nil {
 		log.Fatalf("Failed to generate peer ID: %v", err)
 	}
+
+	// Find an available port
+	listener, err := net.Listen("tcp", ":0")
+	if err != nil {
+		log.Fatalf("Failed to find available port: %v", err)
+	}
+	addr := listener.Addr().(*net.TCPAddr)
+	ourPort = addr.Port
+	listener.Close()
 }
+
 
 func main() {
 	if len(os.Args) < 2 {
