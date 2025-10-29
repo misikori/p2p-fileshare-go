@@ -1,0 +1,13 @@
+{
+  "info": {
+    "name": "small.txt",
+    "size": 512027,
+    "chunk_size": 262144,
+    "hashes": [
+      "+EasSnICAiCkuoiP9sKg6fNCk03hyMaD01AnY+QdGXU=",
+      "kjRDew38zR4SnywqLSUZ1YofQIhHSQbGZGhtIPjTJIc="
+    ]
+  },
+  "info_hash": "8j3okx7DsSbIaPo/bJddKDQRZIeGfI3oeFpPLFdEtxY=",
+  "tracker_url": "http://localhost:8080"
+}

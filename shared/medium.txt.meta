@@ -1,0 +1,16 @@
+{
+  "info": {
+    "name": "medium.txt",
+    "size": 1048604,
+    "chunk_size": 262144,
+    "hashes": [
+      "MNogv0yyZ4ieE2FPPluKUS/VhePtBLACZiKZVydv/00=",
+      "JWByXe8UnO9sO6/d7/4UD8MboEapFvzffvEw5/vqJVw=",
+      "3zwy4TM2rHweg/P4gg/wlBzswquqRSovUnbrhVdJFgw=",
+      "isbmKyzj5X1Hpm1qmS7n1SCQI4Zpe5dw7xm6bqFx3uM=",
+      "4vh6O7uOMFvOnCgrFNvNLSajDC6eGk6y4NSO0UV9hBc="
+    ]
+  },
+  "info_hash": "yTCxDNw+x4frIKVTh+gSV4RC7h43Sa7lJeNp/DA5BGg=",
+  "tracker_url": "http://localhost:8080"
+}

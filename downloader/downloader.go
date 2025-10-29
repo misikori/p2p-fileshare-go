@@ -192,8 +192,8 @@ func (fd *FileDownloader) WritePieceToDisk(pieceData PieceData) error {
 		return fmt.Errorf("invalid piece index: %d", pieceIndex)
 	}
 
-	// Calculate file position: pieceIndex * chunkSize
-	position := int64(pieceIndex) * fd.metaInfo.Info.ChunkSize
+	// Calculate file position: pieceIndex * chunkSize + begin offset
+	position := int64(pieceIndex)*fd.metaInfo.Info.ChunkSize + int64(pieceData.Begin)
 
 	// Seek to the correct position in the file
 	_, err := fd.outputFile.Seek(position, 0)
@@ -213,9 +213,12 @@ func (fd *FileDownloader) WritePieceToDisk(pieceData PieceData) error {
 		return fmt.Errorf("failed to sync piece %d: %v", pieceIndex, err)
 	}
 
-	// Update piece status
-	fd.pieces[pieceIndex].Status = Have
-	fd.completedPieces++
+	// Update piece status (only if this is a complete piece starting at Begin=0)
+	// For sub-piece blocks, we would need more sophisticated tracking
+	if pieceData.Begin == 0 {
+		fd.pieces[pieceIndex].Status = Have
+		fd.completedPieces++
+	}
 
 	return nil
 }

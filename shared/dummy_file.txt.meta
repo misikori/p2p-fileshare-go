@@ -1,1 +1,15 @@
-{"info":{"name":"dummy_file.txt","size":1048576,"chunk_size":262144,"hashes":["HzJweSnvYXfsubH7qgk0T07x1LFc6MsX3sdKjMipfm4=","j0Zpu9+ENpZkMIzkYW+mDiYZ6BNQJphBlAO9RF8Wg24=","ThW0CVWLwUepznisHXD4B6lIR69KxFNUIA+sWH0Uy7A=","e+oGvHhJDCCssd2zrbLMmSX8ej2yRUpnyi7NV8lj3oY="]},"info_hash":"8p0R7AF6XRj9PVmmg58ndjwhD3u6RmknxfYCdqItrTc=","tracker_url":"http://tracker:8080"}
+{
+  "info": {
+    "name": "dummy_file.txt",
+    "size": 1048576,
+    "chunk_size": 262144,
+    "hashes": [
+      "HzJweSnvYXfsubH7qgk0T07x1LFc6MsX3sdKjMipfm4=",
+      "j0Zpu9+ENpZkMIzkYW+mDiYZ6BNQJphBlAO9RF8Wg24=",
+      "ThW0CVWLwUepznisHXD4B6lIR69KxFNUIA+sWH0Uy7A=",
+      "e+oGvHhJDCCssd2zrbLMmSX8ej2yRUpnyi7NV8lj3oY="
+    ]
+  },
+  "info_hash": "8p0R7AF6XRj9PVmmg58ndjwhD3u6RmknxfYCdqItrTc=",
+  "tracker_url": "http://localhost:8080"
+}

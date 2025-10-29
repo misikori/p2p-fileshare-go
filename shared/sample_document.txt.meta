@@ -1,0 +1,12 @@
+{
+  "info": {
+    "name": "sample_document.txt",
+    "size": 73550,
+    "chunk_size": 262144,
+    "hashes": [
+      "+9B3fAgkxF1BZ2iKKUIrmI0jEUJUC4LC5BYJP+WT9Qk="
+    ]
+  },
+  "info_hash": "muT+1jNcwAoC0wo8gkcne4odvWqN7wRa9tnOLAa3j3Q=",
+  "tracker_url": "http://localhost:8080"
+}
