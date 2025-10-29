@@ -10,8 +10,11 @@ import (
 	"net"
 	"net/url"
 	"os"
+	"path/filepath"
+	"strings"
 	"time"
 
+	"p2p-fileshare/downloader"
 	"p2p-fileshare/metafile"
 	pb "p2p-fileshare/tracker"
 
@@ -22,6 +25,36 @@ import (
 var peerID [PeerIDLen]byte
 
 var ourPort int32
+
+var downloadManager *DownloadManager
+
+// fixIPv6Address wraps IPv6 addresses in brackets if needed
+// e.g., ::1:8080 -> [::1]:8080
+func fixIPv6Address(addr string) string {
+	// If the address already has brackets, return as is
+	if strings.HasPrefix(addr, "[") {
+		return addr
+	}
+
+	// Count colons - if more than 1, it's likely IPv6
+	colonCount := strings.Count(addr, ":")
+	if colonCount <= 1 {
+		// IPv4 or hostname:port - return as is
+		return addr
+	}
+
+	// It's IPv6 - need to wrap the IP part in brackets
+	// Find the last colon (separates IP from port)
+	lastColon := strings.LastIndex(addr, ":")
+	if lastColon == -1 {
+		return addr
+	}
+
+	ipPart := addr[:lastColon]
+	portPart := addr[lastColon+1:]
+
+	return fmt.Sprintf("[%s]:%s", ipPart, portPart)
+}
 
 func init() {
 	if _, err := rand.Read(peerID[:]); err != nil {
@@ -52,6 +85,37 @@ func main() {
 
 	numPieces := len(meta.Info.Hashes)
 	ourBitfield := NewBitfield(numPieces)
+
+	// Check if we already have the file and initialize bitfield accordingly
+	outputPath := filepath.Join("./downloads", meta.Info.Name)
+	if fileInfo, err := os.Stat(outputPath); err == nil && fileInfo.Size() == meta.Info.Size {
+		// File exists and has correct size - mark all pieces as available
+		log.Printf("File already exists locally, marking all pieces as available")
+		for i := 0; i < numPieces; i++ {
+			ourBitfield.Set(i)
+		}
+	}
+
+	// Initialize the downloader
+	// Create downloads directory if it doesn't exist
+	if err := os.MkdirAll("./downloads", 0755); err != nil {
+		log.Fatalf("Failed to create downloads directory: %v", err)
+	}
+
+	fileDownloader, err := downloader.NewFileDownloader(meta, outputPath)
+	if err != nil {
+		log.Fatalf("Failed to create file downloader: %v", err)
+	}
+	defer fileDownloader.Close()
+
+	// Create the download manager with our bitfield
+	downloadManager = NewDownloadManager(fileDownloader, ourBitfield)
+
+	// Start the download manager
+	downloadManager.Start()
+
+	// Start processing incoming pieces
+	go downloadManager.ProcessIncomingPieces()
 
 	parsedURL, err := url.Parse(meta.TrackerURL)
 	if err != nil {
@@ -110,7 +174,12 @@ func startTCPListener(infoHash []byte, bitfield Bitfield, fileInfo metafile.File
 
 func connectToPeer(addr string, infoHash []byte, bitfield Bitfield, fileInfo metafile.FileInfo) {
 	log.Printf("Connecting to peer: %s", addr)
-	conn, err := net.DialTimeout("tcp", addr, 3*time.Second)
+
+	// Fix IPv6 addresses - need to be wrapped in brackets
+	// e.g., ::1:8080 should be [::1]:8080
+	dialAddr := fixIPv6Address(addr)
+
+	conn, err := net.DialTimeout("tcp", dialAddr, 3*time.Second)
 	if err != nil {
 		log.Printf("Failed to dial peer %s: %v", addr, err)
 		return
@@ -167,7 +236,21 @@ func connectToPeer(addr string, infoHash []byte, bitfield Bitfield, fileInfo met
 	theirBitfield := Bitfield(recvMsg.Payload)
 	log.Printf("[%s] Received bitfield. Peer has %d pieces.", addr, bytes.Count(theirBitfield, []byte{1}))
 
-	peer := NewPeer(conn, theirBitfield, fileInfo)
+	// Create peer with download manager's channels
+	var workQueue chan *Request
+	var resultsQueue chan *Piece
+	if downloadManager != nil {
+		workQueue = make(chan *Request, 10) // Per-peer work queue
+		resultsQueue = downloadManager.GetResultsQueue()
+	}
+
+	peer := NewPeer(conn, theirBitfield, fileInfo, workQueue, resultsQueue)
+
+	// Register peer with download manager
+	if downloadManager != nil {
+		downloadManager.RegisterPeer(addr, peer)
+		defer downloadManager.UnregisterPeer(addr)
+	}
 
 	if err := peer.RunMessageLoop(); err != nil {
 		log.Printf("Peer %s disconnected: %v", addr, err)
@@ -229,7 +312,23 @@ func handlePeerConnection(conn net.Conn, infoHash []byte, bitfield Bitfield, fil
 	}
 
 	log.Printf("[%s] Entering message loop...", addr)
-	peer := NewPeer(conn, theirBitfield, fileInfo)
+
+	// Create peer with download manager's channels
+	var workQueue chan *Request
+	var resultsQueue chan *Piece
+	if downloadManager != nil {
+		workQueue = make(chan *Request, 10) // Per-peer work queue
+		resultsQueue = downloadManager.GetResultsQueue()
+	}
+
+	peer := NewPeer(conn, theirBitfield, fileInfo, workQueue, resultsQueue)
+
+	// Register peer with download manager
+	if downloadManager != nil {
+		downloadManager.RegisterPeer(addr, peer)
+		defer downloadManager.UnregisterPeer(addr)
+	}
+
 	if err := peer.RunMessageLoop(); err != nil {
 		log.Printf("Peer %s disconnected: %v", addr, err)
 	}

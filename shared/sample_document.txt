@@ -1,0 +1,2000 @@
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.
+P2P File Sharing System - Sample Document
+==========================================
+
+This is a sample text document for testing the P2P file sharing system.
+
+Features:
+---------
+1. Peer-to-Peer file transfer
+2. SHA-256 hash verification
+3. Piece-based downloading
+4. Multiple concurrent peer support
+5. Automatic retry of failed pieces
+
+How it works:
+-------------
+The system breaks files into chunks (pieces) of 256KB each. Each piece is 
+hashed using SHA-256 and stored in a .meta file. When downloading, each 
+piece is verified against its hash before being saved to disk.
+
+This ensures data integrity and allows resuming downloads from where they
+left off (future enhancement).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+liquor jugs. How vexingly quick daft zebras jump!
+
+Testing the P2P system with various file sizes:
+- Tiny files test basic functionality
+- Small files test multi-piece handling
+- Large files test concurrent downloading and piece management
+
+End of sample document.

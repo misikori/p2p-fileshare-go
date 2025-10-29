@@ -45,6 +45,30 @@ func ParseRequest(payload []byte) (*Request, error) {
 	}, nil
 }
 
+func ParsePiece(payload []byte) (*Piece, error) {
+	if len(payload) < 8 {
+		return nil, fmt.Errorf("invalid Piece payload length: %d", len(payload))
+	}
+	return &Piece{
+		Index: binary.BigEndian.Uint32(payload[0:4]),
+		Begin: binary.BigEndian.Uint32(payload[4:8]),
+		Data:  payload[8:],
+	}, nil
+}
+
+func (r *Request) Send(conn net.Conn) error {
+	msg := Message{
+		Type:    MsgRequest,
+		Payload: make([]byte, 12),
+	}
+
+	binary.BigEndian.PutUint32(msg.Payload[0:4], r.Index)
+	binary.BigEndian.PutUint32(msg.Payload[4:8], r.Begin)
+	binary.BigEndian.PutUint32(msg.Payload[8:12], r.Length)
+
+	return msg.Send(conn)
+}
+
 func (p *Piece) Send(conn net.Conn) error {
 	payloadLen := 4 + 4 + len(p.Data)
 	msg := Message{

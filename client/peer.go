@@ -8,23 +8,28 @@ import (
 )
 
 type Peer struct {
-	conn     net.Conn
-	Bitfield Bitfield
-	meta     metafile.FileInfo
+	conn         net.Conn
+	Bitfield     Bitfield
+	meta         metafile.FileInfo
+	workQueue    chan *Request
+	resultsQueue chan *Piece
 }
 
-func NewPeer(conn net.Conn, theirBitfield Bitfield, meta metafile.FileInfo) *Peer {
+func NewPeer(conn net.Conn, theirBitfield Bitfield, meta metafile.FileInfo, workQueue chan *Request, resultsQueue chan *Piece) *Peer {
 	return &Peer{
-		conn:     conn,
-		Bitfield: theirBitfield,
-		meta:     meta,
+		conn:         conn,
+		Bitfield:     theirBitfield,
+		meta:         meta,
+		workQueue:    workQueue,
+		resultsQueue: resultsQueue,
 	}
 }
 
 func (p *Peer) handleRequest(req *Request) error {
 	log.Printf("[%s] Received request for piece %d, offset %d, length %d", p.conn.RemoteAddr(), req.Index, req.Begin, req.Length)
 
-	file, err := os.Open("./shared/" + p.meta.Name)
+	filePath := "shared/" + p.meta.Name
+	file, err := os.Open(filePath)
 	if err != nil {
 		log.Printf("Failed to open file: %v", err)
 		return err
@@ -53,6 +58,9 @@ func (p *Peer) RunMessageLoop() error {
 	defer p.conn.Close()
 	log.Printf("[%s] Starting message loop", p.conn.RemoteAddr())
 
+	// Start goroutine to handle outgoing requests from workQueue
+	go p.sendRequests()
+
 	for {
 		msg, err := ReadMessage(p.conn)
 		if err != nil {
@@ -70,8 +78,34 @@ func (p *Peer) RunMessageLoop() error {
 				log.Printf("Failed to handle request: %v", err)
 				continue
 			}
+		case MsgPiece:
+			piece, err := ParsePiece(msg.Payload)
+			if err != nil {
+				log.Printf("[%s] Failed to parse piece: %v", p.conn.RemoteAddr(), err)
+				continue
+			}
+			log.Printf("[%s] Received piece %d, offset %d, size %d", p.conn.RemoteAddr(), piece.Index, piece.Begin, len(piece.Data))
+			// Send the piece to the downloader
+			if p.resultsQueue != nil {
+				p.resultsQueue <- piece
+			}
 		default:
 			log.Printf("[%s] Received unknown message type: %d", p.conn.RemoteAddr(), msg.Type)
+		}
+	}
+}
+
+// sendRequests reads from the workQueue and sends Request messages to the peer
+func (p *Peer) sendRequests() {
+	if p.workQueue == nil {
+		return
+	}
+
+	for req := range p.workQueue {
+		log.Printf("[%s] Sending request for piece %d, offset %d, length %d", p.conn.RemoteAddr(), req.Index, req.Begin, req.Length)
+		if err := req.Send(p.conn); err != nil {
+			log.Printf("[%s] Failed to send request: %v", p.conn.RemoteAddr(), err)
+			return
 		}
 	}
 }
