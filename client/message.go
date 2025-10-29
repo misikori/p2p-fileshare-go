@@ -9,9 +9,10 @@ import (
 
 type MessageType uint8
 
-// Define our message types
 const (
 	MsgBitfield MessageType = 5
+	MsgRequest  MessageType = 6
+	MsgPiece    MessageType = 7
 )
 
 type Message struct {

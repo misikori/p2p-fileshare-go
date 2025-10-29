@@ -6,7 +6,6 @@ import (
 	"crypto/rand"
 	"encoding/hex"
 	"fmt"
-	"io"
 	"log"
 	"net"
 	"net/url"
@@ -168,9 +167,11 @@ func connectToPeer(addr string, infoHash []byte, bitfield Bitfield) {
 	theirBitfield := Bitfield(recvMsg.Payload)
 	log.Printf("[%s] Received bitfield. Peer has %d pieces.", addr, bytes.Count(theirBitfield, []byte{1}))
 
-	if _, err := io.Copy(io.Discard, conn); err != nil {
-		log.Printf("Connection with %s closed: %v", addr, err)
+	peer := NewPeer(conn, theirBitfield)
+	if err := peer.RunMessageLoop(); err != nil {
+		log.Printf("Peer %s disconnected: %v", addr, err)
 	}
+
 }
 
 func handlePeerConnection(conn net.Conn, infoHash []byte, bitfield Bitfield) {
@@ -227,9 +228,9 @@ func handlePeerConnection(conn net.Conn, infoHash []byte, bitfield Bitfield) {
 	}
 
 	log.Printf("[%s] Entering message loop...", addr)
-
-	if _, err := io.Copy(io.Discard, conn); err != nil {
-		log.Printf("Connection with %s closed: %v", conn.RemoteAddr(), err)
+	peer := NewPeer(conn, theirBitfield)
+	if err := peer.RunMessageLoop(); err != nil {
+		log.Printf("Peer %s disconnected: %v", addr, err)
 	}
 
 }
