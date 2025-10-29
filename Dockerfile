@@ -9,7 +9,7 @@ COPY . .
 
 RUN go build -o /app/tracker ./cmd/tracker/main.go
 
-RUN go build -o /app/client ./client/main.go
+RUN go build -o /app/client ./client/
 
 
 FROM alpine:latest

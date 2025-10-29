@@ -44,12 +44,12 @@ func (s *Tracker) Announce(ctx context.Context, req *AnnounceRequest) (*Announce
 	if !ok || p == nil || p.Addr == nil {
 		return nil, fmt.Errorf("unable to get peer address from context")
 	}
-	host, port, err := net.SplitHostPort(p.Addr.String())
+	host, _, err := net.SplitHostPort(p.Addr.String())
 	if err != nil {
 		return nil, fmt.Errorf("invalid peer address: %v", err)
 	}
 
-	peerAddr := net.JoinHostPort(host, port)
+	peerAddr := fmt.Sprintf("%s:%d", host, req.Port)
 	infoHashHex := hex.EncodeToString(req.InfoHash)
 
 	if _, ok := s.torrents[infoHashHex]; !ok {

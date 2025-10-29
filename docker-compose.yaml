@@ -16,3 +16,5 @@ services:
       - ./shared:/shared
     depends_on:
       - tracker 
+    expose:
+      - "6881"
