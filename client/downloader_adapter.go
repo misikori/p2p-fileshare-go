@@ -19,17 +19,21 @@ type DownloadManager struct {
 	clientWorkQueue    chan *Request
 	clientResultsQueue chan *Piece
 
+	// Bitfield to update when pieces are downloaded
+	ourBitfield Bitfield
+
 	// Shutdown channel
 	done chan struct{}
 }
 
 // NewDownloadManager creates a new download manager
-func NewDownloadManager(fd *downloader.FileDownloader) *DownloadManager {
+func NewDownloadManager(fd *downloader.FileDownloader, bitfield Bitfield) *DownloadManager {
 	return &DownloadManager{
 		fileDownloader:     fd,
 		activePeers:        make(map[string]*Peer),
 		clientWorkQueue:    make(chan *Request, 100),
 		clientResultsQueue: make(chan *Piece, 100),
+		ourBitfield:        bitfield,
 		done:               make(chan struct{}),
 	}
 }
@@ -93,6 +97,19 @@ func (dm *DownloadManager) processPieces() {
 
 			// Send to downloader's results queue
 			dm.fileDownloader.ResultsQueue <- pieceData
+
+			// Update our bitfield asynchronously after piece is processed
+			go func(pieceIndex int) {
+				// Give the downloader time to verify and mark the piece
+				time.Sleep(100 * time.Millisecond)
+
+				// Check if the piece was successfully saved
+				if dm.fileDownloader.GetPieceStatus(pieceIndex) == downloader.Have {
+					if err := dm.ourBitfield.Set(pieceIndex); err == nil {
+						log.Printf("Updated bitfield: now have piece %d", pieceIndex)
+					}
+				}
+			}(int(piece.Index))
 
 		case <-dm.done:
 			return

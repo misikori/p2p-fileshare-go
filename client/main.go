@@ -86,8 +86,17 @@ func main() {
 	numPieces := len(meta.Info.Hashes)
 	ourBitfield := NewBitfield(numPieces)
 
-	// Initialize the downloader
+	// Check if we already have the file and initialize bitfield accordingly
 	outputPath := filepath.Join("./downloads", meta.Info.Name)
+	if fileInfo, err := os.Stat(outputPath); err == nil && fileInfo.Size() == meta.Info.Size {
+		// File exists and has correct size - mark all pieces as available
+		log.Printf("File already exists locally, marking all pieces as available")
+		for i := 0; i < numPieces; i++ {
+			ourBitfield.Set(i)
+		}
+	}
+
+	// Initialize the downloader
 	// Create downloads directory if it doesn't exist
 	if err := os.MkdirAll("./downloads", 0755); err != nil {
 		log.Fatalf("Failed to create downloads directory: %v", err)
@@ -99,8 +108,8 @@ func main() {
 	}
 	defer fileDownloader.Close()
 
-	// Create the download manager
-	downloadManager = NewDownloadManager(fileDownloader)
+	// Create the download manager with our bitfield
+	downloadManager = NewDownloadManager(fileDownloader, ourBitfield)
 
 	// Start the download manager
 	downloadManager.Start()
