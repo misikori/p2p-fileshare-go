@@ -9,14 +9,54 @@ import (
 
 type MessageType uint8
 
-// Define our message types
 const (
 	MsgBitfield MessageType = 5
+	MsgRequest  MessageType = 6
+	MsgPiece    MessageType = 7
 )
 
 type Message struct {
 	Type    MessageType
 	Payload []byte
+}
+
+// defines the payload for a Req message. Asks for a block of data from a Piece.
+type Request struct {
+	Index  uint32
+	Begin  uint32
+	Length uint32
+}
+
+// defines the payload for a Piece message. It sends a block of data.
+type Piece struct {
+	Index uint32
+	Begin uint32
+	Data  []byte
+}
+
+func ParseRequest(payload []byte) (*Request, error) {
+	if len(payload) != 12 {
+		return nil, fmt.Errorf("invalid Request payload length: %d", len(payload))
+	}
+	return &Request{
+		Index:  binary.BigEndian.Uint32(payload[0:4]),
+		Begin:  binary.BigEndian.Uint32(payload[4:8]),
+		Length: binary.BigEndian.Uint32(payload[8:12]),
+	}, nil
+}
+
+func (p *Piece) Send(conn net.Conn) error {
+	payloadLen := 4 + 4 + len(p.Data)
+	msg := Message{
+		Type:    MsgPiece,
+		Payload: make([]byte, payloadLen),
+	}
+
+	binary.BigEndian.PutUint32(msg.Payload[0:4], p.Index)
+	binary.BigEndian.PutUint32(msg.Payload[4:8], p.Begin)
+	copy(msg.Payload[8:], p.Data)
+
+	return msg.Send(conn)
 }
 
 func (m *Message) Send(conn net.Conn) error {
