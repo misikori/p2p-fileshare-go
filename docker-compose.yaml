@@ -1,20 +1,54 @@
 services:
   tracker:
-    build: . 
-    command: tracker 
-    ports:
-      - "8080:8080" 
-
-  client:
     build: .
-    command: > 
-      sh -c "
-        echo 'Waiting for tracker to start...' && sleep 5;
-        client /shared/dummy_file.txt.meta
-      "
+    command: tracker
+    ports:
+      - "8080:8080"
+    networks:
+      - p2p-net
+
+  seeder:
+    build: .
+    command: client /shared/small.txt.meta
+    networks:
+      - p2p-net
+    expose:
+      - "50000-50100" 
+    depends_on:
+      - tracker
     volumes:
       - ./shared:/shared
-    depends_on:
-      - tracker 
+      - ./seeder-files:/downloads
+
+  leecher1:
+    build: .
+    command: client /shared/small.txt.meta
+    networks:
+      - p2p-net
     expose:
-      - "6881"
+      - "50000-50100"
+    depends_on:
+      - tracker
+    volumes:
+      - ./shared:/shared
+      - leecher1-data:/downloads
+
+  leecher2:
+    build: .
+    command: client /shared/small.txt.meta
+    networks:
+      - p2p-net
+    expose:
+      - "50000-50100"
+    depends_on:
+      - tracker
+    volumes:
+      - ./shared:/shared
+      - leecher2-data:/downloads
+
+networks:
+  p2p-net:
+
+volumes:
+  leecher1-data:
+  leecher2-data:
