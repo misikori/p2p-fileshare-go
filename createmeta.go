@@ -36,7 +36,7 @@ func main() {
 		log.Fatalf("Error encoding meta file: %v", err)
 	}
 
-	log.Printf("✓ Created %s", metaFilePath)
+	log.Printf("  Created %s", metaFilePath)
 	log.Printf("  File: %s", meta.Info.Name)
 	log.Printf("  Size: %d bytes", meta.Info.Size)
 	log.Printf("  Pieces: %d", len(meta.Info.Hashes))
